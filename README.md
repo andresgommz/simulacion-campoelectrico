@@ -201,6 +201,6 @@ El notebook genera automáticamente dos figuras con fondo oscuro:
 
 <div align="center">
 
-Desarrollado para el curso de **Electromagnetismo** · Universidad Andrés Bello
+Desarrollado para el curso de **Electromagnetismo** · Universidad Autónoma de Bucaramanga
 
 </div>
