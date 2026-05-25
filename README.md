@@ -1,4 +1,4 @@
-# ⚡ Simulación de Campo Eléctrico y Superficies Equipotenciales
+# Simulación de Campo Eléctrico y Superficies Equipotenciales
 
 <div align="center">
 
@@ -6,8 +6,6 @@
 ![NumPy](https://img.shields.io/badge/NumPy-2.0-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.10-11557C?style=for-the-badge)
 ![Google Colab](https://img.shields.io/badge/Google_Colab-Ready-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Vankzzz/simulacion-campoelectrico/blob/main/simulacion-campoelectrico.ipynb)
 
 </div>
 
@@ -17,22 +15,22 @@
 
 ---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
-- [Descripción](#-descripción)
-- [Fundamento Teórico](#-fundamento-teórico)
-- [Características](#-características)
-- [Tecnologías](#-tecnologías)
-- [Instalación y Uso](#-instalación-y-uso)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Resultados](#-resultados)
-- [Comparativa: Experimento vs. Simulación](#-comparativa-experimento-vs-simulación)
-- [Posibles Mejoras](#-posibles-mejoras)
-- [Referencias](#-referencias)
+- [Descripción](#descripción)
+- [Fundamento Teórico](#fundamento-teórico)
+- [Características](#características)
+- [Tecnologías](#tecnologías)
+- [Instalación y Uso](#instalación-y-uso)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Resultados](#resultados)
+- [Comparativa: Experimento vs. Simulación](#comparativa-experimento-vs-simulación)
+- [Posibles Mejoras](#posibles-mejoras)
+- [Referencias](#referencias)
 
 ---
 
-## 📖 Descripción
+## Descripción
 
 **Curso:** Electromagnetismo  
 **Tema:** Potencial eléctrico, campo eléctrico y superficies equipotenciales
@@ -46,7 +44,7 @@ En los laboratorios de física experimental, una práctica común consiste en me
 
 ---
 
-## 🧲 Fundamento Teórico
+## Fundamento Teórico
 
 ### Potencial de una carga puntual
 
@@ -66,21 +64,21 @@ $$\vec{E} = -\nabla V$$
 
 ---
 
-## ✨ Características
+## Características
 
-- 🔢 **Entrada interactiva:** define entre 1 y 8 cargas puntuales (valor en nC y posición).
-- 🗺️ **Malla de alta resolución:** evaluación en 400×400 puntos (160,000 puntos).
-- 📊 **Panel de 3 gráficas:**
+- **Entrada interactiva:** define entre 1 y 8 cargas puntuales (valor en nC y posición).
+- **Malla de alta resolución:** evaluación en 400×400 puntos (160,000 puntos).
+- **Panel de 3 gráficas:**
   - Mapa de equipotenciales con líneas de contorno etiquetadas.
   - Streamplot del campo eléctrico coloreado por magnitud.
   - Vista combinada equipotenciales + líneas de campo.
-- 📈 **Perfiles 1D:** corte del potencial a lo largo de los ejes *x* e *y*.
-- 💾 **Exportación automática** de figuras en PNG (`campo_electrico.png`, `perfil_potencial.png`).
-- 🧮 **Verificación numérica:** comparación entre campo analítico y gradiente numérico.
+- **Perfiles 1D:** corte del potencial a lo largo de los ejes *x* e *y*.
+- **Exportación automática** de figuras en PNG (`campo_electrico.png`, `perfil_potencial.png`).
+- **Verificación numérica:** comparación entre campo analítico y gradiente numérico.
 
 ---
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 | Librería | Versión | Uso |
 |---|---|---|
@@ -91,15 +89,9 @@ $$\vec{E} = -\nabla V$$
 
 ---
 
-## 🚀 Instalación y Uso
+## Instalación y Uso
 
-### Opción 1: Google Colab (Recomendado)
-
-Haz clic en el botón:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Vankzzz/simulacion-campoelectrico/blob/main/simulacion-campoelectrico.ipynb)
-
-### Opción 2: Ejecución local
+### Opción 1: Ejecución local
 
 1. **Clona el repositorio:**
    ```bash
@@ -119,17 +111,21 @@ Haz clic en el botón:
 
 4. **Ejecuta las celdas en orden** y sigue las instrucciones en la celda interactiva (Sección 4.3).
 
+### Opción 2: Google Colab
+
+Sube el archivo `simulacion-campoelectrico.ipynb` directamente a [Google Colab](https://colab.research.google.com/) y ejecuta las celdas en orden.
+
 ### Ejemplo de configuración
 
 ```
-▶ Ingresa el número de cargas: 2
+Ingresa el número de cargas: 2
 
-🔵 Carga #1:
+Carga #1:
    Valor q_1 [nC]: 5
    Posición x_1: 1
    Posición y_1: 2
 
-🔵 Carga #2:
+Carga #2:
    Valor q_2 [nC]: -5
    Posición x_2: 3
    Posición y_2: 2
@@ -139,7 +135,7 @@ Rango x: [0, 4]   |   Rango y: [0, 3]
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 simulacion-campoelectrico/
@@ -152,7 +148,7 @@ simulacion-campoelectrico/
 
 ---
 
-## 📊 Resultados
+## Resultados
 
 El notebook genera automáticamente dos figuras con fondo oscuro:
 
@@ -167,12 +163,12 @@ El notebook genera automáticamente dos figuras con fondo oscuro:
 ### Interpretación física
 
 - Las equipotenciales **más juntas** indican campo más intenso.
-- Las líneas de campo **nacen** en cargas positivas (🔴) y **terminan** en negativas (🔵).
+- Las líneas de campo **nacen** en cargas positivas y **terminan** en negativas.
 - La perpendicularidad entre equipotenciales y líneas de campo confirma $\vec{E} = -\nabla V$.
 
 ---
 
-## 🔬 Comparativa: Experimento vs. Simulación
+## Comparativa: Experimento vs. Simulación
 
 | Aspecto | Experimento real | Esta simulación |
 |---|---|---|
@@ -184,7 +180,7 @@ El notebook genera automáticamente dos figuras con fondo oscuro:
 
 ---
 
-## 🔮 Posibles Mejoras
+## Posibles Mejoras
 
 - [ ] Extensión a **3 dimensiones** con superficies isopotenciales.
 - [ ] **Animaciones** de la trayectoria de una carga de prueba.
@@ -194,7 +190,7 @@ El notebook genera automáticamente dos figuras con fondo oscuro:
 
 ---
 
-## 📚 Referencias
+## Referencias
 
 - Griffiths, D. J. *Introduction to Electrodynamics*, 4th ed. Pearson, 2017.
 - Serway, R. A. & Jewett, J. W. *Physics for Scientists and Engineers*, 9th ed. Cengage, 2014.
